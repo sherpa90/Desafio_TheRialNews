@@ -82,6 +82,4 @@ test:
 #
 production:
   <<: *default
-  database: Desafio_TheRialNews_production
-  username: Desafio_TheRialNews
-  password: <%= ENV["DESAFIO_THERIALNEWS_DATABASE_PASSWORD"] %>
+  url: <%= ENV['DATABASE_URL'] %>
